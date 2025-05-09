@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ЕГЭ Club</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(160deg, #d9f3ff, #e5d4ff, #ffdbf5);
+      background-attachment: fixed;
+      color: #222;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: #8a00d4;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .btn-primary {
+      background: linear-gradient(to right, #ff00c8, #8a00d4);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .categories, .guides, .top-authors {
+      padding: 40px;
+    }
+
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #f5f5f5;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">ЕГЭ Club</div>
+    <nav>
+      <a href="#">Главная</a>
+      <a href="#">Задачи</a>
+      <a href="#">Гайды</a>
+      <a href="#">Сообщество</a>
+      <a href="#">Профиль</a>
+    </nav>
+    <button class="btn-primary">Войти</button>
+  </header>
+
+  <section class="hero">
+    <h1>Готовься к ЕГЭ с умом и вместе с другими!</h1>
+    <p>Составляй уникальные варианты задач, делись решениями и общайся с теми, кто тоже готовится.</p>
+    <button class="btn-primary">Начать подготовку</button>
+  </section>
+
+  <section class="categories">
+    <h2 class="section-title">Категории заданий</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Информатика</h3>
+        <p>Анализ моделей, таблицы истинности, базы данных и другое</p>
+      </div>
+      <div class="card">
+        <h3>Математика</h3>
+        <p>Профиль и база: уравнения, функции, планиметрия</p>
+      </div>
+      <div class="card">
+        <h3>Русский язык</h3>
+        <p>Задания по орфографии, пунктуации, сочинение</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="guides">
+    <h2 class="section-title">Гайды от пользователей</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Как решать логические таблицы</h3>
+        <p>Автор: @egemaster</p>
+      </div>
+      <div class="card">
+        <h3>Лучшие методы запоминания формул</h3>
+        <p>Автор: @math_wizard</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="top-authors">
+    <h2 class="section-title">Лучшие авторы</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>@egemaster</h3>
+        <p>45 лайков | 12 гайдов</p>
+      </div>
+      <div class="card">
+        <h3>@infotech</h3>
+        <p>30 лайков | 8 гайдов</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 ЕГЭ Club. Все права защищены.
+  </footer>
+</body>
+</html>
